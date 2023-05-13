@@ -10,6 +10,26 @@
 <br>$ git push origin +master  // remote repository에 추가(강제)
 <br><br>
 
+📍 origin에서 코드 가져오기
+<br>$ git pull origin master
+<br><br>
+
+📍 원격저장소 확인/연결
+<br>$ git remote -v
+<br>$ git remote add (이름) (url) // 원격저장소 추가
+<br><br>
+
+📍 처음부터 특정 파일 커밋 안 하기
+<br>.gitignore파일을 생성해 git에 추가하고 싶지 않은 파일이나 폴더 리스트를 입력
+<br>.gitignore 파일 목록 검색
+<br>-o : untracked files
+<br>-m : modified files
+<br>-d : deleted files
+<br>-c : cached files
+<br>-i : ignored files
+<br>--exclude-standard : .gitignore
+<br><br>
+
 📍 커밋 수정(amend)     //로컬 저장소의 가장 마지막 커밋을 수정
 <br>git commit --amend -m "(설명)"
 <br>git commit --amend --no-edit //--no-edit 옵션은 설명 수정하지 않을 때
@@ -17,11 +37,6 @@
 
 📍 커밋 이력 보기(log)
 <br>$ git log     //이후 git checkout으로 시점을 변경하거나 reset 등으로 되돌리기 가능
-<br><br>
-
-📍 원격저장소 확인/연결
-<br>$ git remote -v
-<br>$ git remote add (이름) (url) // 원격저장소 추가
 <br><br>
 
 📍 브랜치 목록 보기
@@ -59,22 +74,6 @@
 <br>$ git checkout (브랜치명)   // 해당 브랜치로 이동
 <br><br>
 
-📍 처음부터 특정 파일 커밋 안 하기
-<br>.gitignore파일을 생성해 git에 추가하고 싶지 않은 파일이나 폴더 리스트를 입력
-<br>.gitignore 파일 목록 검색
-
-<br>-o : untracked files
-<br>-m : modified files
-<br>-d : deleted files
-<br>-c : cached files
-<br>-i : ignored files
-<br>--exclude-standard : .gitignore
-<br><br>
-
-📍 origin에서 코드 가져오기
-<br>$ git pull origin master
-<br><br>
-
 📍 원격 저장소에서 코드 가져오기
 <br>$ git clone (url) (저장할 폴더 이름)
 <br><br>
@@ -85,8 +84,6 @@
 
 📍 병합하기
 <br>master 브랜치 또는 원하는 브랜치로 이동 후 병합하고자 하는 브랜치를 병합
-<br><br>
-
 <br>$ git checkout master
 <br>$ git merge (브랜치명)
 <br><br>
