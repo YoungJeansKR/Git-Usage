@@ -1,24 +1,28 @@
 # Git-Usage
 Git 사용법 정리
-<br><br><br>
+<br><br>
 
 📍 기본
-$ git add (파일명) 		// 특정 파일 Index(Staging area)에 추가
-$ git add . 			 // 현재 및 하위 디렉토리 모든 파일 index 추가
-$ git commit -m "(설명)"	// local repository에 추가
-$ git push origin master // remote repository에 추가
-<br><br><br>
+<br>$ git add (파일명) 		// 특정 파일 Index(Staging area)에 추가
+<br>$ git add . 			 // 현재 및 하위 디렉토리 모든 파일 index 추가
+<br>$ git commit -m "(설명)"	// local repository에 추가
+<br>$ git push origin master // remote repository에 추가
+<br>
 
 📍 커밋 수정(amend)
-로컬 저장소의 가장 마지막 커밋을 수정
+<br>로컬 저장소의 가장 마지막 커밋을 수정
+<br>
 
 git commit --amend -m "(설명)"
 git commit --amend --no-edit //--no-edit 옵션은 설명 수정하지 않을 때
+<br>
 📍 버전확인
 $ git --version
+<br>
 📍 커밋 이력 보기(log)
 $ git log
 이후 git checkout으로 시점을 변경하거나 reset 등으로 되돌리기 가능
+<br>
 
 📍 커밋 이력 보기2(reflog)
 $ git reflog
@@ -155,59 +159,6 @@ $ git merge (브랜치명)
 📍 특정 브랜치를 다른 브랜치의 코드로 대체
 $ git checkout (바뀔 브랜치)
 $ git reset --hard (타깃 브랜치)
-기타
-📍 깃 메시지
-.gitmessage.txt 작성 후 아래와 같이 설정하면 git commit 시 커스텀 메시지를 볼 수 있다.
-
-git config --global commit.template .gitmessage.txt
-.gitmessage.txt 예시
-
-# <타입>: <제목>
-# 본문
-# 꼬리말
-# 필요한 경우 주석 처리(#)를 지우고 사용. 이슈 트래킹을 위함
-# Issues: #이슈번호
-# Resolves: #이슈번호
-# See also: #이슈번호
-# ------------------
-# <타입> 리스트
-#   feat    : 기능 (새로운 기능)
-#   fix     : 버그 (버그 수정)
-#   design  : CSS 등 사용자 UI 디자인 변경
-#   style   : 스타일 (코드 형식, 세미콜론 추가: 비즈니스 로직에 변경 없음)
-#   refactor: 리팩토링
-#   comment : 필요한 주석 추가 및 변경
-#   docs    : 문서 (문서 추가, 수정, 삭제)
-#   test    : 테스트 (테스트 코드 추가, 수정, 삭제: 비즈니스 로직에 변경 없음)
-#   chore   : 기타 변경사항 (빌드 스크립트, 패키지 매니저 설정 수정 등)
-#   rename  : 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우
-#   remove  : 파일을 삭제하는 작업만 수행한 경우
-#   !HOTFIX : 급하게 치명적인 버그를 고쳐야하는 경우
-#   !BREAKING CHANGE : CHANGE 커다란 API 변경의 경우
-# ------------------
-#     제목과 본문을 한 줄 띄워 분리하기
-#     제목 첫 글자를 대문자로
-#     제목은 영어 50자 이내 (한글은 25자 이내)
-#     제목은 명령문으로 (적용 시, 이 커밋은 <커밋 메시지> 합니다)
-#     제목 끝에 마침표(.) 금지
-#     본문은 영어 72자 마다 개행 (한글은 36자 마다)
-#     본문은 “어떻게” 보다 “무엇을“, “왜”를 설명한다.
-#     본문에 여러줄의 메시지를 작성할 땐 “-”로 구분
-# ------------------
-#     꼬리말은 optional이고 이슈 트래커 ID를 작성합니다.
-#     꼬리말은 “유형: #이슈 번호” 형식으로 사용합니다.
-#     여러 개의 이슈 번호를 적을 때는 쉼표로 구분합니다.
-#     이슈 트래커 유형은 다음 중 하나를 사용합니다.
-#       - Fixes: 이슈 수정중 (아직 해결되지 않은 경우)
-#       - Resolves: 이슈를 해결했을 때 사용
-#       - Ref: 참고할 이슈가 있을 때 사용
-#       - Related to: 해당 커밋에 관련된 이슈번호 (아직 해결되지 않은 경우)
-#     ex) Fixes: #45 Related to: #34, #23
-#-------------------
-📍 깃 파일명 대소문자 구분
-Git은 기본적으로 대소문자를 구분하지 않는 파일 시스템에서 동작하기 때문에, 파일명의 대소문자 구분을 하려면 다음 명령어를 실행한다.
-
-git config core.ignorecase false 
 
 📍깃헙 토큰 발행 방법
 ➡️ github 접속 및 가입
@@ -216,7 +167,7 @@ git config core.ignorecase false
 ➡️ personal access tokens 
 ➡️ generate new tokens
 ✎ 토큰 설정 후 토큰 키를 복사한다음에 쉘에서 push할 때 비밀번호 작성하는 부분에 붙여넣어야 함
-<br><br><br>
+<br>
 
 📍ssh key 설정 방법
 shell에서 
@@ -224,11 +175,10 @@ $ ssh-keygen            //키 생성
 $ cat ~/.ssh/id_rsa     //개인키
 $ cat ~/.ssh/id_rsa.pub //공개키
 ✎ 이후 깃허브 프로필-세팅에서 ssh 공개키 등록
-<br><br><br>
+<br>
 
 📍깃허브 push용 이름 및 이메일 세팅
 $ git config --global user.name "username"
 $ git config --global user.email "email@email.com"
 ✎ --global 옵션은 default로 전체 깃에 적용. 특정 프로젝트에서 이름 다르게 하려면 --global 옵션 빼고 하면 됨
-<br><br><br>
 
