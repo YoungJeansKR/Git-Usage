@@ -123,11 +123,3 @@ $ git merge (브랜치명)
 <br>$ git checkout (바뀔 브랜치)
 <br>$ git reset --hard (타깃 브랜치)
 ```
-
-<br/>
-
-📍깃허브 push용 이름 및 이메일 세팅
-```
-$ git config --global user.name "username"
-$ git config --global user.email "email@email.com"
-```
