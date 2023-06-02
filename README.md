@@ -89,9 +89,8 @@ $ git push origin --delete (브랜치명)    //원격저장소에서도 삭제
 
 📍checkout
 ```
-$ git checkout (커밋아이디)  // 커밋아이디는 git log로 확인
-$ git checkout master	  // 최근 커밋 상태로 돌아오기
-$ git checkout (브랜치명)   // 해당 브랜치로 이동
+$ git checkout master // 커밋아이디는 git log로 확인
+$ git checkout main   // 최근 커밋 상태로 돌아오기
 ```
 
 <br/>
@@ -112,7 +111,7 @@ $ git clone (url) (저장할 폴더 이름)
 
 📍 병합하기
 ```
-$ git checkout master
+$ git checkout main
 $ git merge (브랜치명)
 ```
 
