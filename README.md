@@ -4,11 +4,11 @@
 
 📍 기본
 ```
-$ git pull origin main       // origin에서 코드 가져오기
-$ git add .                  // 현재 및 하위 디렉토리 모든 파일 index 추가
-$ git commit -m "message"    // local repository에 추가
-$ git push origin main       // remote repository에 추가
-$ git push origin main -f    // remote repository에 추가(강제)
+$ git pull origin main        // origin에서 코드 가져오기
+$ git add .                   // 현재 및 하위 디렉토리 모든 파일 index 추가
+$ git commit -m "message"     // local repository에 추가
+$ git push origin main        // remote repository에 추가
+$ git push origin main -f     // remote repository에 추가(강제)
 ```
 
 <br/>
