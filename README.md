@@ -6,26 +6,20 @@
 
 📍 기본
 ```
-$ git add (파일명)          // 특정 파일 Index(Staging area)에 추가
-$ git add .                // 현재 및 하위 디렉토리 모든 파일 index 추가
-$ git commit -m "(설명)"   // local repository에 추가
+$ git pull origin main    // origin에서 코드 가져오기
+$ git add .               // 현재 및 하위 디렉토리 모든 파일 index 추가
+$ git commit -m "text"    // local repository에 추가
 $ git push origin main    // remote repository에 추가
 $ git push origin -f main // remote repository에 추가(강제)
 ```
 
 <br/>
 
-📍 origin에서 코드 가져오기
-```
-$ git pull origin master
-```
-
-<br/>
-
 📍 원격저장소 확인/연결
 ```
-$ git remote -v
-$ git remote add (이름) (url) // 원격저장소 추가
+$ git remote add origin (url) // 원격저장소 추가
+$ git remote rm origin        // 원격저장소 제거
+$ git remote -v               // 원격저장소 주소 확인
 ```
 
 <br/>
@@ -47,23 +41,21 @@ $ git remote add (이름) (url) // 원격저장소 추가
 📍 커밋 수정(amend)
 ```
 $ git commit --amend -m "(설명)"
-$ git commit --amend --no-edit //--no-edit 옵션은 설명 수정하지 않을 때
 ```
 
 <br/>
 
 📍 커밋 이력 보기(log)
 ```
-$ git log     //이후 git checkout으로 시점을 변경하거나 reset 등으로 되돌리기 가능
+$ git log //이후 git checkout으로 시점을 변경하거나 reset 등으로 되돌리기 가능
 ```
 
 <br/>
 
 📍 브랜치 목록 보기
 ```
-$ git fetch		  // 정보 업데이트
-$ git branch  	  //local
-$ git branch -a   //remote까지 확인
+$ git fetch   // 정보 업데이트
+$ git branch  //local
 ```
 
 <br/>
@@ -79,18 +71,10 @@ index(stage) 영역에 있으면 🟩초록색 = add 된 상태
 
 📍 새 브랜치 만들기
 ```
-$ git branch (브랜치명) 	   			   // 브랜치만 생성
-$ git checkout (브랜치명)    			   // 해당 브랜치로 이동
-$ git checkout -b (브랜치명) 			   // 현재 커밋에서 브랜치 생성하고 이동
+$ git branch (브랜치명) 	   			          // 브랜치만 생성
+$ git checkout (브랜치명)    			         // 해당 브랜치로 이동
+$ git checkout -b (브랜치명) 			         // 현재 커밋에서 브랜치 생성하고 이동
 $ git checkout (커밋아이디) -b (브랜치명)   //해당 커밋으로 이동 후 브랜치 생성
-```
-
-<br/>
-
-📍 브랜치 목록 보기
-```
-$ git branch    //local
-$ git branch -a //remote까지 확인
 ```
 
 <br/>
