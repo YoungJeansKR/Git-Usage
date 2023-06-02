@@ -1,6 +1,6 @@
 # Git-Usage
 
-* Git 사용법 정리
+Git 사용법 정리
 
 <br/>
 
@@ -10,12 +10,12 @@ $ git pull origin main    // origin에서 코드 가져오기
 $ git add .               // 현재 및 하위 디렉토리 모든 파일 index 추가
 $ git commit -m "message" // local repository에 추가
 $ git push origin main    // remote repository에 추가
-$ git push origin -f main // remote repository에 추가(강제)
+$ git push origin main -f // remote repository에 추가(강제)
 ```
 
 <br/>
 
-📍 원격저장소 확인/연결
+📍 원격저장소 연결
 ```
 $ git remote add origin (url) // 원격저장소 추가
 $ git remote rm origin        // 원격저장소 제거
@@ -24,7 +24,7 @@ $ git remote -v               // 원격저장소 주소 확인
 
 <br/>
 
-📍 처음부터 특정 파일 커밋 안 하기
+📍 특정 파일 커밋 안 하기
 ```
 .gitignore파일을 생성해 git에 추가하고 싶지 않은 파일이나 폴더 리스트를 입력
 .gitignore 파일 목록 검색
