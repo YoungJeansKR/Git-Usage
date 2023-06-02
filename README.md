@@ -7,7 +7,7 @@
 📍 기본
 ```
 $ git add (파일명)          // 특정 파일 Index(Staging area)에 추가
-$ git add . 			         // 현재 및 하위 디렉토리 모든 파일 index 추가
+$ git add .                // 현재 및 하위 디렉토리 모든 파일 index 추가
 $ git commit -m "(설명)"   // local repository에 추가
 $ git push origin masin   // remote repository에 추가
 $ git push origin -f main // remote repository에 추가(강제)
