@@ -120,4 +120,3 @@ $ git merge (브랜치명)
 $ git checkout (바뀔 브랜치)
 $ git reset --hard (타깃 브랜치)
 ```
-gg
