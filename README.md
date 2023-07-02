@@ -51,9 +51,9 @@ index(stage) 영역에 있으면 🟩초록색 = add 된 상태
 
 ## 📍 새 브랜치 만들기
 ```bash
-$ git branch (브랜치명) 	   			          // 브랜치만 생성
-$ git checkout (브랜치명)    			        // 해당 브랜치로 이동
-$ git checkout -b (브랜치명) 			        // 현재 커밋에서 브랜치 생성하고 이동
+$ git branch (브랜치명)                    // 브랜치만 생성
+$ git checkout (브랜치명)                  // 해당 브랜치로 이동
+$ git checkout -b (브랜치명)               // 현재 커밋에서 브랜치 생성하고 이동
 $ git checkout (커밋아이디) -b (브랜치명)  // 해당 커밋으로 이동 후 브랜치 생성
 ```
 
