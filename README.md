@@ -14,7 +14,7 @@ $ git push origin main -f     // remote repository에 추가(강제)
 <br/>
 
 📍 원격저장소 연결
-```
+```bash
 $ git remote add origin (url) // 원격저장소 추가
 $ git remote rm origin        // 원격저장소 제거
 $ git remote -v               // 원격저장소 주소 확인
