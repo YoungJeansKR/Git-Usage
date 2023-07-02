@@ -26,20 +26,20 @@ $ git remote -v               // 원격저장소 주소 확인
 --exclude-standard : .gitignore
 ```
 
-## 📍 커밋 수정(amend)
+## 📍 커밋 수정
 ```bash
 $ git commit --amend -m "(설명)"
 ```
 
-## 📍 커밋 이력 보기(log)
+## 📍 커밋 이력 보기
 ```bash
-$ git log //이후 git checkout으로 시점을 변경하거나 reset 등으로 되돌리기 가능
+$ git log  // 이후 git checkout으로 시점을 변경하거나 reset 등으로 되돌리기 가능
 ```
 
 ## 📍 브랜치 목록 보기
 ```bash
 $ git fetch   // 정보 업데이트
-$ git branch  //local
+$ git branch  // local
 ```
 
 ## 📍 파일 상태보기
@@ -52,21 +52,20 @@ index(stage) 영역에 있으면 🟩초록색 = add 된 상태
 ## 📍 새 브랜치 만들기
 ```bash
 $ git branch (브랜치명) 	   			          // 브랜치만 생성
-$ git checkout (브랜치명)    			         // 해당 브랜치로 이동
-$ git checkout -b (브랜치명) 			         // 현재 커밋에서 브랜치 생성하고 이동
-$ git checkout (커밋아이디) -b (브랜치명)   //해당 커밋으로 이동 후 브랜치 생성
+$ git checkout (브랜치명)    			        // 해당 브랜치로 이동
+$ git checkout -b (브랜치명) 			        // 현재 커밋에서 브랜치 생성하고 이동
+$ git checkout (커밋아이디) -b (브랜치명)  // 해당 커밋으로 이동 후 브랜치 생성
 ```
 
 ## 📍 브랜치 삭제
 ```bash
-$ git branch -d (브랜치명) 			   //로컬 저장소에서 브랜치 삭제
-$ git push origin --delete (브랜치명)    //원격저장소에서도 삭제
+$ git branch -d (브랜치명)             // 로컬 저장소에서 브랜치 삭제
+$ git push origin --delete (브랜치명)  // 원격저장소에서도 삭제
 ```
 
-## 📍checkout
+## 📍브랜치 이동
 ```bash
-$ git checkout master // 커밋아이디는 git log로 확인
-$ git checkout main   // 최근 커밋 상태로 돌아오기
+$ git checkout master
 ```
 
 ## 📍 원격 저장소에서 코드 가져오기
