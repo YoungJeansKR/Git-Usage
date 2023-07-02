@@ -2,7 +2,7 @@
 ```bash
 $ git pull origin main        // origin에서 코드 가져오기
 $ git add .                   // 현재 및 하위 디렉토리 모든 파일 index 추가
-$ git commit -m "message"     // local repository에 추가
+$ git commit -m "message"     // 로컬 repository에 추가
 $ git push origin main        // remote repository에 추가
 $ git push origin main -f     // remote repository에 추가(강제)
 ```
@@ -39,7 +39,7 @@ $ git log  // 이후 git checkout으로 시점을 변경하거나 reset 등으�
 ## 📍 브랜치 목록 보기
 ```bash
 $ git fetch   // 정보 업데이트
-$ git branch  // local
+$ git branch  // 로컬
 ```
 
 ## 📍 파일 상태보기
